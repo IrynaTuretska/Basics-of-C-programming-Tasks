@@ -18,7 +18,9 @@ int main(void) {
   return 0;
 }
 
-/*
+
+/*better code
+
 #include <stdio.h>
 
 int main() {
@@ -26,4 +28,5 @@ int main() {
   puts("The world is yours!");
   return 0;
 }
+
 */
