@@ -57,3 +57,16 @@ int main(void) {
   return 0;
 }
 
+/*better code
+
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int k, m;
+    scanf("%d %d", &k, &m);
+    if (k < 1) k = 1;
+    for (int i = k; i <= m; printf("%d\ ", i++));
+}
+
+*/
