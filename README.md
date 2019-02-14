@@ -1,8 +1,4 @@
 # Basics of C programming. Tasks.
-http://youngcoder.ru/lessons
-
-
-https://stepik.org/course/3078
 
 
 Мои решения задач из курса по основам языка Си. 
