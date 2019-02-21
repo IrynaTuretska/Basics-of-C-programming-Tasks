@@ -15,7 +15,6 @@ Sample Output:
 
 */
 
-
 void swap(int * a, int * b){
     int tmp;
     tmp = *a;
