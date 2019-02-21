@@ -15,6 +15,7 @@ Sample Output:
 
 */
 
+
 void swap(int * a, int * b){
     int tmp;
     tmp = *a;
@@ -22,6 +23,7 @@ void swap(int * a, int * b){
     *b = tmp;
 
 }
+
 
 /*
  * better code
