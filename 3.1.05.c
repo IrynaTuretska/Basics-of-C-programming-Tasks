@@ -1,4 +1,7 @@
 /*
+3.1 Функция форматного вывода printf
+
+
 
 [Image: https://ucarecdn.com/349c0084-d0dd-44b6-bb09-0b37e5aebb34/]
 
