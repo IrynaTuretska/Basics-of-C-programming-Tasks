@@ -57,6 +57,7 @@ scanf("%d", &b);
  return 0;
 }
 
+
 /*better code
 
 #include <stdio.h>
