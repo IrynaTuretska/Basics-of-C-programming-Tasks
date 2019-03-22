@@ -1,115 +1,115 @@
 /*
-10.1 Функции и переменные
- 
-  
+   10.1 Функции и переменные
 
-Квадрат.
-Напишите функцию с именем square(n,c), которая выводит на экран квадрат размера n на n, заполненный символами c. Например:
 
-square(4,#);
-выведет:
-####
-####
-####
-####
 
-Входные данные:
-Одно целое число и символ заполнитель.
+   Квадрат.
+   Напишите функцию с именем square(n,c), которая выводит на экран квадрат размера n на n, заполненный символами c. Например:
 
-Выходные данные:
-Квадрат из символов, указанного формата.
+   square(4,#);
+   выведет:
+ ####
+ ####
+ ####
+ ####
 
-Sample Input 1:
+   Входные данные:
+   Одно целое число и символ заполнитель.
 
-3 #
+   Выходные данные:
+   Квадрат из символов, указанного формата.
 
-Sample Output 1:
+   Sample Input 1:
 
-###
-###
-###
+   3 #
 
-Sample Input 2:
+   Sample Output 1:
 
-5 .
+ ###
+ ###
+ ###
 
-Sample Output 2:
+   Sample Input 2:
 
-.....
-.....
-.....
-.....
-.....
+   5 .
 
-Sample Input 3:
+   Sample Output 2:
 
-8 *
+   .....
+   .....
+   .....
+   .....
+   .....
 
-Sample Output 3:
+   Sample Input 3:
 
-********
-********
-********
-********
-********
-********
-********
-********
+   8 *
 
-Sample Input 4:
+   Sample Output 3:
 
-6 %
+ ********
+ ********
+ ********
+ ********
+ ********
+ ********
+ ********
+ ********
 
-Sample Output 4:
+   Sample Input 4:
 
-%%%%%%
-%%%%%%
-%%%%%%
-%%%%%%
-%%%%%%
-%%%%%%
+   6 %
 
-*/
+   Sample Output 4:
 
-#include<stdio.h>
+   %%%%%%
+   %%%%%%
+   %%%%%%
+   %%%%%%
+   %%%%%%
+   %%%%%%
+
+ */
+
+#include <stdio.h>
 
 void square(int n, char c){
-    int i, j;
+        int i, j;
 
-        for(int i=0; i < n; i++){
-    	for(int j = 0; j < n; j++){
-    	printf("%c", c);
-    	}
-    	printf("\n");
-    }
+        for(int i=0; i < n; i++) {
+                for(int j = 0; j < n; j++) {
+                        printf("%c", c);
+                }
+                printf("\n");
+        }
 }
 
 
 int main(void){
-    int n;
-    char c;
-    scanf("%d %c",&n,&c);
+        int n;
+        char c;
+        scanf("%d %c",&n,&c);
 
-    square(n,c);
+        square(n,c);
 
-    return 0;
+        return 0;
 }
 
 /*
  * better code
  *
-#include <stdio.h>
-void square(int x, char c){
+ #include <stdio.h>
+   void square(int x, char c){
     for (int i = 0; i < x; i++) {
         for (int j = 0; j < x; j++) {
             printf("%c", c);
         }
         printf("\n");
     }
-}
-int main(){ 
+   }
+   int main(){
     int k; char c;
     scanf("%d %c", &k, &c);
     square(k, c);
-}
-*/
+   }
+ */

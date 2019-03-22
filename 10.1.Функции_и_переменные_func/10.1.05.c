@@ -1,102 +1,102 @@
 /*
-10.1 Функции и переменные
-  
-  
-  
+   10.1 Функции и переменные
 
-Число сочетаний.
-Допустим, у вас имеется N
-хоккеистов. Из них нужно сформировать команду из K
 
-человек. Сколько существует вариантов это сделать? На подобные вопросы существует стандартный ответ -- число сочетаний, которое вычисляется по следующей формуле:
-Сkn=n!k!(n−k)!
-Например, N=5,K=3, то
-С35=5!3!(2)!=1206⋅2=10
 
-Входные данные:
-Натуральное число N
-и целое неотрицательное число K,(K<N),N<12
 
-.
+   Число сочетаний.
+   Допустим, у вас имеется N
+   хоккеистов. Из них нужно сформировать команду из K
 
-Выходные данные:
-Одно число - количество сочетаний хоккеистов.
+   человек. Сколько существует вариантов это сделать? На подобные вопросы существует стандартный ответ -- число сочетаний, которое вычисляется по следующей формуле:
+   Сkn=n!k!(n−k)!
+   Например, N=5,K=3, то
+   С35=5!3!(2)!=1206⋅2=10
 
-Подсказки:
-Необходимо написать две функции: factorial(p) и combin(n,k).
+   Входные данные:
+   Натуральное число N
+   и целое неотрицательное число K,(K<N),N<12
 
-Sample Input 1:
+   .
 
-3 1
+   Выходные данные:
+   Одно число - количество сочетаний хоккеистов.
 
-Sample Output 1:
+   Подсказки:
+   Необходимо написать две функции: factorial(p) и combin(n,k).
 
-3
+   Sample Input 1:
 
-Sample Input 2:
+   3 1
 
-3 0
+   Sample Output 1:
 
-Sample Output 2:
+   3
 
-1
+   Sample Input 2:
 
-Sample Input 3:
+   3 0
 
-4 2
+   Sample Output 2:
 
-Sample Output 3:
+   1
 
-6
+   Sample Input 3:
 
-*/
+   4 2
 
-#include<stdio.h>
+   Sample Output 3:
+
+   6
+
+ */
+
+#include <stdio.h>
 
 int factorial(int);
 
 int factorial(int p){
-    int n=1, i;
+        int n=1, i;
 
-    for(i=1; i<= p; i++) n*=i;
-    return n;
+        for(i=1; i<= p; i++) n*=i;
+        return n;
 
 }
 int combin(int n, int k){
-    int c, nk;
+        int c, nk;
 
-    nk = n - k;
+        nk = n - k;
 
-    c = factorial(n) / (factorial(k) * factorial(nk));
+        c = factorial(n) / (factorial(k) * factorial(nk));
 
-    return c;
+        return c;
 }
 
 int main(void){
-    int n = 0, k = 0, nk = 0;
-    scanf("%d%d",&n,&k);
+        int n = 0, k = 0, nk = 0;
+        scanf("%d%d",&n,&k);
 
 
-    //printf("%d\n%d\n%d\n", nk, n, k);
-    printf("%d",combin(n,k));
+        //printf("%d\n%d\n%d\n", nk, n, k);
+        printf("%d",combin(n,k));
 
-    return 0;
+        return 0;
 }
 
 /*
  * better code
  *
-#include<stdio.h>
-int factorial(int p){
+ #include<stdio.h>
+   int factorial(int p){
     return p <= 1 ? 1 : p*factorial(p-1);
-}
-int combin(int n, int k){
+   }
+   int combin(int n, int k){
     return (int) factorial(n)/(factorial(k)*factorial(n-k));
-}
+   }
 
-int main(void){
+   int main(void){
     int n, k;
     scanf("%d%d",&n,&k);
     printf("%d",combin(n,k));
-}
-*/
+   }
+ */
