@@ -1,25 +1,25 @@
 /*
-10.3 Аргументы функций
- 
+   10.3 Аргументы функций
 
 
-Написать функцию void swap(int * x, int * y), которая меняет значения переменных местами.
 
-Sample Input:
+   Написать функцию void swap(int * x, int * y), которая меняет значения переменных местами.
 
-2 0
+   Sample Input:
 
-Sample Output:
+   2 0
 
-0 2
+   Sample Output:
 
-*/
+   0 2
+
+ */
 
 void swap(int * a, int * b){
-    int tmp;
-    tmp = *a;
-    *a = *b;
-    *b = tmp;
+        int tmp;
+        tmp = *a;
+        *a = *b;
+        *b = tmp;
 
 }
 
@@ -27,9 +27,9 @@ void swap(int * a, int * b){
 /*
  * better code
  *
- void swap(int * a, int * b){
+   void swap(int * a, int * b){
     int t = *a;
-    *a = *b;
-    *b = t;
-}
-*/
+ * a = *b;
+ * b = t;
+   }
+ */

@@ -1,45 +1,45 @@
 /*
-10.3 Аргументы функций
-  
-Шифр Цезаря.
-Написать функцию void char_cesar(char * ch, int shift), которая изменяет переданный ей символ ch по алгоритму Цезаря с ключом shift.
+   10.3 Аргументы функций
 
-Шифр Цезаря заключается в замене текущего символа на тот, который находится в алфавите на k позиций правее. Например, буква a при сдвиге 2 будет заменена на букву c, буква x при сдвиге 4 будет заменена на букву b, т.к. мы считаем алфавит зацикленным.
+   Шифр Цезаря.
+   Написать функцию void char_cesar(char * ch, int shift), которая изменяет переданный ей символ ch по алгоритму Цезаря с ключом shift.
 
-Sample Input 1:
+   Шифр Цезаря заключается в замене текущего символа на тот, который находится в алфавите на k позиций правее. Например, буква a при сдвиге 2 будет заменена на букву c, буква x при сдвиге 4 будет заменена на букву b, т.к. мы считаем алфавит зацикленным.
 
-a 2
+   Sample Input 1:
 
-Sample Output 1:
+   a 2
 
-c
+   Sample Output 1:
 
-Sample Input 2:
+   c
 
-x 4
+   Sample Input 2:
 
-Sample Output 2:
+   x 4
 
-b
+   Sample Output 2:
 
-*/
+   b
+
+ */
 
 void char_cesar(char * ch, int shift){
-    //char c = (*ch + shift);
+        //char c = (*ch + shift);
 
-    if(*ch+shift > 122){
-        *ch = *ch+shift - 26;
-    }else if(*ch+shift <= 122){
-        *ch = *ch + shift;
-    }
+        if(*ch+shift > 122) {
+                *ch = *ch+shift - 26;
+        }else if(*ch+shift <= 122) {
+                *ch = *ch + shift;
+        }
 
 }
 
 /*
  * better code
  *
-void char_cesar(char * ch, int fl){
-    *ch = (*ch+fl)-26*(*ch+fl>122);
-}
+   void char_cesar(char * ch, int fl){
+ * ch = (*ch+fl)-26*(*ch+fl>122);
+   }
 
-*/
+ */

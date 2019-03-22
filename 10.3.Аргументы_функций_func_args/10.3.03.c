@@ -1,39 +1,39 @@
 /*
-10.3 Аргументы функций
-  
+   10.3 Аргументы функций
 
 
-Написать функцию void minmax(int * x, int * y), записывающую в переменную x минимальное из значений x и y, а в переменную y -- максимальное из этих значений.
 
-Sample Input:
+   Написать функцию void minmax(int * x, int * y), записывающую в переменную x минимальное из значений x и y, а в переменную y -- максимальное из этих значений.
 
-4435 21
+   Sample Input:
 
-Sample Output:
+   4435 21
 
-21 4435
+   Sample Output:
 
-*/
+   21 4435
+
+ */
 
 void minmax(int * x, int * y){
 
-    if(*x > *y){
-        int tmp_x = *x;
-        *x = *y;
-        *y = tmp_x;
-    }
+        if(*x > *y) {
+                int tmp_x = *x;
+                *x = *y;
+                *y = tmp_x;
+        }
 
 }
 
 /*
  * beter code
  *
-void minmax(int * a, int * b){
+   void minmax(int * a, int * b){
     if (*a > *b) {
         int t = *a;
-        *a = *b;
-        *b = t;
+ * a = *b;
+ * b = t;
     }
-}
+   }
 
-*/
+ */
